@@ -1,5 +1,5 @@
 
-Cosmic Extragalactic Background for PopRatio 
+Cosmic Extragalactic Background for PopRatio
 ============================================
 
 The original implementation of the extragalactic background field
@@ -18,7 +18,7 @@ The patch is given in `FieldInt_KS18.f90`. In order to compile this in PopRatio
 you should copy this file to the source directory of PopRatio and rename the
 file to `FieldInt.f90` (I recommend that you keep a backup of the original file):
 
-.. code::
+.. code-block:: bash
     cp FieldInt_KS18.f90 /path/to/popratio/.
     cd /path/to/popratio
     mv FieldInt.f90  FieldInt_orig.f90
@@ -28,9 +28,7 @@ Hereafter, you just need to change the function call to ``Fuvb`` in PopRatio.f90
 Find all the calls to ``Fuvb``, if you haven't changed anything in PopRatio.f90
 before there will only be one around line 600, and change the call as follows:
 
-.. code::
+.. code-block:: fortran
     Fuvb(lambda,z,3) --> Fuvb(lambda,z)
 
 That's it! You are now ready to compile the code and run popratio.
-
-
