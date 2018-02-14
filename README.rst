@@ -6,10 +6,15 @@ The original implementation of the extragalactic background field
 in PopRatio `(Silva & Viegas 2001) <https://arxiv.org/abs/astro-ph/0010533>`_
 uses the model from Madau, Haardt & Rees (1999). Since then various
 improved models have emerged, e.g., the updated Haardt & Madau (2012)
-or Khaire & Srianand (2018).
+or `Khaire & Srianand (2018) <https://arxiv.org/abs/1801.09693>`_.
 Here I present the implementation of the Khaire & Srianand (2018; KS18)
 extragalctic background field for use in PopRatio.
 
+The original code is available at the `PopRatio webpage <http://www.ignacioalex.com/popratio/>`_.
+
+If you use this patch in your work, please cite my paper on arXiv
+and of course cite the original paper by
+`(Silva & Viegas 2001) <https://arxiv.org/abs/astro-ph/0010533>`_.
 
 Installation
 ============
